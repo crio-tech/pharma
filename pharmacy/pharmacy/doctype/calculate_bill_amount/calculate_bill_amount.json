@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "creation": "2020-08-27 00:00:56.643577",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bills",
+  "get_total",
+  "grand_total",
+  "section_break_4",
+  "cheque_number",
+  "cheque_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "bills",
+   "fieldtype": "Table MultiSelect",
+   "label": "Bills",
+   "options": "Bills"
+  },
+  {
+   "fieldname": "get_total",
+   "fieldtype": "Button",
+   "label": "Get Total"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cheque_number",
+   "fieldtype": "Table MultiSelect",
+   "label": "Cheque Number",
+   "options": "Multiple Cheque"
+  },
+  {
+   "fieldname": "cheque_date",
+   "fieldtype": "Date",
+   "label": "Cheque Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-08-27 00:08:22.875511",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Calculate Bill Amount",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

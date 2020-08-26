@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "creation": "2020-08-26 23:47:48.101801",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pharma",
+  "column_break_2",
+  "bill_date",
+  "section_break_4",
+  "bill_number",
+  "column_break_6",
+  "amount",
+  "section_break_8",
+  "bill_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "pharma",
+   "fieldtype": "Link",
+   "label": "Pharma",
+   "options": "Pharma"
+  },
+  {
+   "fieldname": "bill_date",
+   "fieldtype": "Date",
+   "label": "Bill Date"
+  },
+  {
+   "fieldname": "bill_number",
+   "fieldtype": "Data",
+   "label": "Bill Number"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "bill_status",
+   "fieldtype": "Select",
+   "label": "Bill Status",
+   "options": "\nPaid\nUnpaid"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-08-26 23:49:53.654971",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Bill",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
