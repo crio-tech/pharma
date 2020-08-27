@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:name1",
  "creation": "2020-08-26 23:40:08.881125",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -17,13 +18,16 @@
   "column_break_10",
   "mrp",
   "column_break_12",
-  "rack_number"
+  "rack_number",
+  "column_break_14",
+  "box_number"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Name",
+   "unique": 1
   },
   {
    "fieldname": "batch_no",
@@ -79,11 +83,20 @@
    "fieldtype": "Link",
    "label": "Pharma",
    "options": "Pharma"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "box_number",
+   "fieldtype": "Int",
+   "label": "Box number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-08-26 23:50:17.770986",
+ "modified": "2020-08-27 15:01:37.105339",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Medicine",

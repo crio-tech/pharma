@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "format:name1-bill_number",
  "creation": "2020-08-26 23:47:48.101801",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -62,7 +63,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-08-26 23:49:53.654971",
+ "modified": "2020-08-27 15:07:26.247293",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Bill",
