@@ -1,53 +1,82 @@
 {
  "actions": [],
+ "autoname": "field : pharma",
  "creation": "2020-08-27 00:00:56.643577",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "bills",
-  "get_total",
-  "grand_total",
-  "section_break_4",
-  "cheque_number",
-  "cheque_date"
+  "pharma",
+  "from_date",
+  "to_date",
+  "get_bills",
+  "bills_section",
+  "bill_list",
+  "total_amount",
+  "cheque_section",
+  "cheque_list"
  ],
  "fields": [
   {
-   "fieldname": "bills",
-   "fieldtype": "Table MultiSelect",
-   "label": "Bills",
-   "options": "Bills"
+   "fieldname": "pharma",
+   "fieldtype": "Link",
+   "label": "Pharma",
+   "options": "Pharma",
+   "reqd": 1
   },
   {
-   "fieldname": "get_total",
-   "fieldtype": "Button",
-   "label": "Get Total"
-  },
-  {
-   "fieldname": "grand_total",
-   "fieldtype": "Float",
-   "label": "Grand Total"
-  },
-  {
-   "fieldname": "section_break_4",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "cheque_number",
-   "fieldtype": "Table MultiSelect",
-   "label": "Cheque Number",
-   "options": "Multiple Cheque"
-  },
-  {
-   "fieldname": "cheque_date",
+   "fieldname": "from_date",
    "fieldtype": "Date",
-   "label": "Cheque Date"
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "get_bills",
+   "fieldtype": "Button",
+   "label": "Get Bills"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "bills_section",
+   "fieldtype": "Section Break",
+   "label": "Bills"
+  },
+  {
+   "fieldname": "bill_list",
+   "fieldtype": "Table",
+   "label": "Bill List",
+   "options": "Bill List"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Amount"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "cheque_section",
+   "fieldtype": "Section Break",
+   "label": "Cheque"
+  },
+  {
+   "fieldname": "cheque_list",
+   "fieldtype": "Table",
+   "label": "Cheque List",
+   "options": "Cheque List"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-08-27 00:08:22.875511",
+ "modified": "2021-02-16 16:09:06.257885",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Calculate Bill Amount",

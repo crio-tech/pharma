@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "creation": "2021-02-16 13:53:28.896182",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medicine_name",
+  "batch_no",
+  "expiry_date",
+  "qty",
+  "mrp",
+  "rate",
+  "discount",
+  "tax",
+  "amount",
+  "box_number",
+  "rack_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "medicine_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Batch No"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Data",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "mrp",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "MRP"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Float",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "tax",
+   "fieldtype": "Float",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "box_number",
+   "fieldtype": "Int",
+   "label": "Box number"
+  },
+  {
+   "fieldname": "rack_number",
+   "fieldtype": "Int",
+   "label": "Rack Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-02-16 14:03:25.887572",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Medicine Entry List",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,102 +1,53 @@
 {
  "actions": [],
- "autoname": "field:name1",
+ "autoname": "format:{pharma}-{bill_no}",
  "creation": "2020-08-26 23:40:08.881125",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "column_break_2",
-  "batch_no",
-  "section_break_4",
   "pharma",
-  "column_break_4",
-  "expiry_date",
-  "section_break_8",
-  "qty",
-  "column_break_10",
-  "mrp",
-  "column_break_12",
-  "rack_number",
-  "column_break_14",
-  "box_number"
+  "bill_no",
+  "medicine_entry_list",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name",
-   "unique": 1
-  },
-  {
-   "fieldname": "batch_no",
-   "fieldtype": "Int",
-   "label": "Batch No"
-  },
-  {
-   "fieldname": "expiry_date",
-   "fieldtype": "Data",
-   "label": "Expiry Date"
-  },
-  {
-   "fieldname": "qty",
-   "fieldtype": "Int",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "mrp",
-   "fieldtype": "Int",
-   "label": "MRP"
-  },
-  {
-   "fieldname": "rack_number",
-   "fieldtype": "Int",
-   "label": "Rack Number"
-  },
-  {
-   "fieldname": "column_break_2",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_10",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_12",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "section_break_4",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "section_break_8",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "pharma",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Pharma",
-   "options": "Pharma"
+   "options": "Pharma",
+   "reqd": 1
   },
   {
-   "fieldname": "column_break_14",
-   "fieldtype": "Column Break"
+   "fieldname": "bill_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bill No",
+   "reqd": 1
   },
   {
-   "fieldname": "box_number",
-   "fieldtype": "Int",
-   "label": "Box number"
+   "fieldname": "medicine_entry_list",
+   "fieldtype": "Table",
+   "label": "Medicine Entry List",
+   "options": "Medicine Entry List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Medicine",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2020-08-27 15:01:37.105339",
+ "modified": "2021-02-16 13:58:31.520110",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Medicine",
@@ -115,7 +66,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

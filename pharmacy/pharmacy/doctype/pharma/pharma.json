@@ -6,30 +6,20 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "amended_from"
+  "name1"
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "name1",
    "fieldtype": "Data",
    "label": "Name",
    "unique": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Pharma",
-   "print_hide": 1,
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2020-08-27 15:05:44.838852",
+ "modified": "2021-02-16 15:45:30.740858",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Pharma",

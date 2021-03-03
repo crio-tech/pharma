@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2021-02-16 16:02:42.565315",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_no",
+  "bill_date",
+  "bill_amount",
+  "bill_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "bill_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bill No",
+   "options": "Bill"
+  },
+  {
+   "fieldname": "bill_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Bill Status",
+   "options": "\nPaid\nUnpaid"
+  },
+  {
+   "fieldname": "bill_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "bill_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-02-16 16:09:43.991198",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Bill List",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

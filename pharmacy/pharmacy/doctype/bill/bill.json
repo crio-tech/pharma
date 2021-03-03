@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:name1-bill_number",
+ "autoname": "field : bill_number",
  "creation": "2020-08-26 23:47:48.101801",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -8,9 +8,9 @@
  "field_order": [
   "pharma",
   "column_break_2",
-  "bill_date",
-  "section_break_4",
   "bill_number",
+  "section_break_4",
+  "bill_date",
   "column_break_6",
   "amount",
   "section_break_8",
@@ -21,28 +21,36 @@
    "fieldname": "pharma",
    "fieldtype": "Link",
    "label": "Pharma",
-   "options": "Pharma"
+   "options": "Pharma",
+   "reqd": 1
   },
   {
    "fieldname": "bill_date",
    "fieldtype": "Date",
-   "label": "Bill Date"
+   "in_list_view": 1,
+   "label": "Bill Date",
+   "reqd": 1
   },
   {
    "fieldname": "bill_number",
    "fieldtype": "Data",
-   "label": "Bill Number"
+   "label": "Bill Number",
+   "reqd": 1
   },
   {
    "fieldname": "amount",
    "fieldtype": "Float",
-   "label": "Amount"
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
   },
   {
    "fieldname": "bill_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Bill Status",
-   "options": "\nPaid\nUnpaid"
+   "options": "\nPaid\nUnpaid",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_2",
@@ -63,7 +71,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-08-27 15:07:26.247293",
+ "modified": "2021-02-16 15:53:22.551430",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Bill",
