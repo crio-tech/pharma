@@ -39,7 +39,7 @@
   },
   {
    "fieldname": "amount",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Amount",
    "reqd": 1
@@ -71,7 +71,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-16 15:53:22.551430",
+ "modified": "2021-03-19 22:37:24.691048",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Bill",

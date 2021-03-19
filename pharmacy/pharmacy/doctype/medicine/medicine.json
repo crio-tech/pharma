@@ -1,53 +1,24 @@
 {
  "actions": [],
- "autoname": "format:{pharma}-{bill_no}",
+ "autoname": "field : medicine",
  "creation": "2020-08-26 23:40:08.881125",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "pharma",
-  "bill_no",
-  "medicine_entry_list",
-  "amended_from"
+  "medicine"
  ],
  "fields": [
   {
-   "fieldname": "pharma",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Pharma",
-   "options": "Pharma",
-   "reqd": 1
-  },
-  {
-   "fieldname": "bill_no",
+   "fieldname": "medicine",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Bill No",
-   "reqd": 1
-  },
-  {
-   "fieldname": "medicine_entry_list",
-   "fieldtype": "Table",
-   "label": "Medicine Entry List",
-   "options": "Medicine Entry List",
-   "reqd": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Medicine",
-   "print_hide": 1,
-   "read_only": 1
+   "label": "Medicine"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-02-16 13:58:31.520110",
+ "modified": "2021-03-19 23:05:14.672709",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Medicine",

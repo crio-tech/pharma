@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "autoname": "field : medicine",
+ "creation": "2021-03-19 22:32:14.028569",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medicine",
+  "column_break_2",
+  "pharma",
+  "section_break_4",
+  "medicine_stock_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "medicine",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medicine",
+   "options": "Medicine",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pharma",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pharma",
+   "options": "Pharma",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medicine_stock_list",
+   "fieldtype": "Table",
+   "label": "Medicine Stock List",
+   "options": "Medicine Stock List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-19 22:46:25.222974",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Medicine Stock",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

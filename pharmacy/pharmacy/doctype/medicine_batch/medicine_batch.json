@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "autoname": "format : {batch_no}-{medicine}",
+ "creation": "2021-03-19 21:42:56.860925",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "batch_no",
+  "column_break_2",
+  "closed",
+  "section_break_4",
+  "medicine",
+  "column_break_6",
+  "exp"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Batch No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "closed",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Closed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medicine",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medicine",
+   "options": "Medicine",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exp",
+   "fieldtype": "Date",
+   "label": "EXP",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-19 22:59:24.751583",
+ "modified_by": "Administrator",
+ "module": "Pharmacy",
+ "name": "Medicine Batch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
