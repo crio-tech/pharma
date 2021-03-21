@@ -28,7 +28,7 @@
   },
   {
    "fieldname": "batch_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Batch No"
   },
@@ -52,12 +52,12 @@
   },
   {
    "fieldname": "discount",
-   "fieldtype": "Float",
+   "fieldtype": "Percent",
    "label": "Discount"
   },
   {
    "fieldname": "tax",
-   "fieldtype": "Float",
+   "fieldtype": "Percent",
    "label": "Tax"
   },
   {
@@ -77,14 +77,14 @@
   },
   {
    "fieldname": "exp",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "EXP"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-19 23:06:27.755947",
+ "modified": "2021-03-19 23:28:55.079890",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Medicine Entry List",

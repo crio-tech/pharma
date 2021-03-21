@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field : medicine",
+ "autoname": "format:{medicine} : pharma",
  "creation": "2021-03-19 22:32:14.028569",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -10,6 +10,10 @@
   "column_break_2",
   "pharma",
   "section_break_4",
+  "rack_no",
+  "column_break_6",
+  "box_no",
+  "section_break_8",
   "medicine_stock_list"
  ],
  "fields": [
@@ -19,7 +23,8 @@
    "in_list_view": 1,
    "label": "Medicine",
    "options": "Medicine",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "column_break_2",
@@ -42,11 +47,29 @@
    "fieldtype": "Table",
    "label": "Medicine Stock List",
    "options": "Medicine Stock List"
+  },
+  {
+   "fieldname": "rack_no",
+   "fieldtype": "Data",
+   "label": "Rack No"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "box_no",
+   "fieldtype": "Data",
+   "label": "Box No"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 22:46:25.222974",
+ "modified": "2021-03-20 15:33:57.464286",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Medicine Stock",

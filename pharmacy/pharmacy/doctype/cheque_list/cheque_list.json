@@ -24,7 +24,7 @@
   },
   {
    "fieldname": "cheque_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date"
   }
@@ -32,7 +32,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-02-16 16:09:22.450157",
+ "modified": "2021-03-20 14:58:33.289668",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Cheque List",

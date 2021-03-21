@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field : pharma",
+ "autoname": "field:pharma",
  "creation": "2020-08-27 00:00:56.643577",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -14,7 +14,8 @@
   "bill_list",
   "total_amount",
   "cheque_section",
-  "cheque_list"
+  "cheque_list",
+  "amended_from"
  ],
  "fields": [
   {
@@ -22,7 +23,8 @@
    "fieldtype": "Link",
    "label": "Pharma",
    "options": "Pharma",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "from_date",
@@ -72,11 +74,21 @@
    "fieldtype": "Table",
    "label": "Cheque List",
    "options": "Cheque List"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calculate Bill Amount",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2021-02-16 16:09:06.257885",
+ "modified": "2021-03-20 14:15:05.911853",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Calculate Bill Amount",
@@ -95,7 +107,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

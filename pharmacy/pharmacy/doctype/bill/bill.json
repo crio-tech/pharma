@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field : bill_number",
+ "autoname": "field:bill_number",
  "creation": "2020-08-26 23:47:48.101801",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -20,6 +20,7 @@
   {
    "fieldname": "pharma",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Pharma",
    "options": "Pharma",
    "reqd": 1
@@ -35,7 +36,8 @@
    "fieldname": "bill_number",
    "fieldtype": "Data",
    "label": "Bill Number",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "amount",
@@ -71,7 +73,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 22:37:24.691048",
+ "modified": "2021-03-20 12:43:22.015256",
  "modified_by": "Administrator",
  "module": "Pharmacy",
  "name": "Bill",
